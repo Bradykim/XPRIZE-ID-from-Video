@@ -1,7 +1,5 @@
 # XPRIZE-ID-from-Video
 
-# Frame Extraction -- Rainforest Engineering Project
-
 `python 2.7`
 
 This program extracts frames containing plants from video footage.
