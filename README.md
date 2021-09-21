@@ -1,8 +1,13 @@
 # XPRIZE-ID-from-Video
 
 `python 2.7`
+The goal of this project is to provide a dataset for plant and animal rainforest research that is streamlined and easy-to-use. Hence, the potential users of this work include researchers interested in performing work on rainforest plant and animal data.
 
-This program extracts frames containing plants from video footage.
+There is over 1 terabyte of video data taken, much of which is repetitive between frames. This enormous amount of data makes it very difficult to run identification efficiently through iNaturalist, or to train the Data+ model efficiently on a dataset that is high quality enough to lead to an accuracy greater than average. Hence, filtering repetitive or similar photos between videos will also be a substantial improvement on the previous year’s work.
+
+We will aim to  cropping the images used as data. Cropped images will clearly show what plant needs to be identified, instead of a much larger image with several objects. This will help in improving the accuracy of species identification. For this reason, cropping images will be a substantial improvement on the previous year’s work.
+
+
 
 ## Configuration
 
