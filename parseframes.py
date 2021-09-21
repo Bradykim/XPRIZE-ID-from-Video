@@ -2,6 +2,7 @@ import io
 import os
 import cv2
 import glob
+import requests
 
 # Imports the Google Cloud client library
 from google.cloud import vision
@@ -62,12 +63,26 @@ for frame in glob.glob(os.path.join(path, '*.jpg')):
     # Performs label detection on the image file
     response = client.label_detection(image=image)
     labels = response.label_annotations
+    
+    
+    #Checks similarity of two images to each other
+    r = requests.post(
+    "https://api.deepai.org/api/image-similarity",
+    files={
+        'image1': open('/path/to/your/file.jpg', 'rb'),
+        'image2': open('/path/to/your/file.jpg', 'rb'),
+    },
+    headers={'api-key': 'quickstart-QUdJIGlzIGNvbWluZy4uLi4K'}
+    )
+    print(r.json())
 
-    # Remove unqualified frames
-    score = 0
-    for label in labels:
-        if label.description == "Plant":
-            score = label.score
-    print("Score for " + frame + ": " + str(score))
-    if score < threshold:
-        os.remove(frame)
+#     # Remove unqualified frames
+#     score = 0
+#     for label in labels:
+#         if label.description == "Plant":
+#             score = label.score
+#     print("Score for " + frame + ": " + str(score))
+#     if score < threshold:
+#         os.remove(frame)
+        
+
