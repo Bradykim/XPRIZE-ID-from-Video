@@ -32,5 +32,5 @@ export GOOGLE_APPLICATION_CREDENTIALS=./credential.json
 virtualenv -p=/usr/bin/python2.7 .
 source ./bin/activate
 pip install -r requirements.txt
-python recognize.py
+python parseframe.py
 ```
