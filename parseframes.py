@@ -76,13 +76,15 @@ for frame in glob.glob(os.path.join(path, '*.jpg')):
     )
     print(r.json())
 
-#     # Remove unqualified frames
-#     score = 0
-#     for label in labels:
-#         if label.description == "Plant":
-#             score = label.score
-#     print("Score for " + frame + ": " + str(score))
-#     if score < threshold:
-#         os.remove(frame)
+    
+#Step 1
+    # Remove unqualified frames
+    score = 0
+    for label in labels:
+        if label.description == "Plant":
+            score = label.score
+    print("Score for " + frame + ": " + str(score))
+    if score < threshold:
+        os.remove(frame)
         
 
