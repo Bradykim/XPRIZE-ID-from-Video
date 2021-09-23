@@ -63,8 +63,18 @@ for frame in glob.glob(os.path.join(path, '*.jpg')):
     # Performs label detection on the image file
     response = client.label_detection(image=image)
     labels = response.label_annotations
-    
-    
+  
+#Step 1
+    # Remove unqualified frames
+    score = 0
+    for label in labels:
+            score = label.score
+    print("Score for " + frame + ": " + str(score))
+    if score < threshold:
+        os.remove(frame)
+
+   
+#Step 2
     #Checks similarity of two images to each other
     r = requests.post(
     "https://api.deepai.org/api/image-similarity",
@@ -75,15 +85,6 @@ for frame in glob.glob(os.path.join(path, '*.jpg')):
     headers={'api-key': 'quickstart-QUdJIGlzIGNvbWluZy4uLi4K'}
     )
     print(r.json())
-
     
-#Step 1
-    # Remove unqualified frames
-    score = 0
-    for label in labels:
-            score = label.score
-    print("Score for " + frame + ": " + str(score))
-    if score < threshold:
-        os.remove(frame)
         
 
