@@ -15,7 +15,7 @@ To set up Google Cloud Vision API please follow the guidance: https://cloud.goog
 
 ## Parameters
 
-Set the following parameters in recognize.py:
+Set the following parameters in FilterVideos.py:
 
 1. fps  
    fps refers to how many frames to process in one second of footage. Higher fps produces more frames but may lead to multiple frames of the same plant.
@@ -26,8 +26,10 @@ Set the following parameters in recognize.py:
 
 1. input  
    Store all mp4 footages in the input folder.
-2. output  
-   The frames will be stored as jpg in the output folder.
+2. output1  
+   The filtered frames will be stored in output1. Run FilterImages.py to get to Step 3
+3. Labeled Cropped Images
+   The cropped images from the original frames stored in output1. Parses labeled frames of objects.
 
 
 ## Command
