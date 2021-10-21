@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "ocean-engineering",
+  "private_key_id": "96e0c62d5fe3a79f3eaa8b55a17b07c2532c47f3",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEuwIBADANBgkqhkiG9w0BAQEFAASCBKUwggShAgEAAoIBAQCUUXQZSWZHe/7D\nswOKONkEI86e5d6wUld9zTrDfPRrpYA0zaS21LRI8pxXjVCQXB1/Q3U5O0/Jm+6W\nVQtmfhGqe1mpjP0Y8fRbVN9oLDlbRMmYgSqEU5ENYTlJvjy6QGPk5bK4D6+VKj5I\ng24wWzEMmhQwweQIL7xGBbUhlJ1acH+CBt7XRKjBFTW6xC+Kp1jU2t0YiVyB4YDs\n6wsNUo1fYrjiad5SAQ41yVN0oPF6uYTet+NcTEK2bfTKuIZ2swcasEsiC0W/jl0m\nXbLKuyEfblmsB76UOtYA9G6Ro6UHs0C1BCANiDon1UEPKehNoSBTTsA4O4zqeETX\nmCKvY2gNAgMBAAECgf9jplZapvYRET4aPiwisg8cuPIZ0FfOH4SpATp6HXoa2RdK\nYuBH9qEqYdao/EkktL8cwjYAPdldm2axmnIOaqVz5WxYfmGOYQHMWzm+w/fFWnIY\nBLCMN5k9ZBUZdrdWa+yx3aI2CFPv5HH0RlnCI4LQ9LScDakn1uqoIS2RYkhWejkq\n7kcG4ctibqhFnVeh3vWuTjvtAZ/p5YcuVihoE0yKArD/FTsziYfZ/pnysrFgm7LX\nh/nLO4IshjcuWpmixi9bx8AT26kLWoRkkSCfpPuURfslHTRnq+n6rJIt9OsXDVTw\neHbD1pQEEbTBxwfNK9kcBYNJOKbByOLr0MqIKlECgYEAyk9mOewB0bBkitL8VUUW\n1LobDDHvaZnHXcKh0IdGJ/21GQ5Qk8omBjfkJvsdvKzSIrsaYYE4Q19i3iwkSfIz\nJVVgsioQNz7Cw1H9EFSuNzLoxadEPge1Z7Vque0XcD/xychOel5fcuYuo9lF8Vap\nKq3tKGedzEwKsY72dgX0twcCgYEAu63u3YpHkjQS1oIqqMm2VSTF5WTBUMsMFaeC\nxVMYvcTwQgz+KV0JkdTtbgxqcDobXQEKbgXuVoyTcFw+PIhoVaqSaY1mnAsxdnxw\nO3ra5SA70GtR3Ys3j48gs19MD4BboJyhsrqd2VWGSKHSa685+DR1gQgU6lNcPuJg\nnULMr0sCgYBExj8jO6bWqNdVFipvtl/viyC8wZD43i0XI54srH/eAnJ5BRPBWfwZ\nKxDla4KNbFa3NdHfCbWduaR7kJf5h1t5uo93obMHhM9i5NFZpt/epfDZmGYrjCVQ\nDy0r7XyFTUed5/k9wi1Cexup2afcRjCV8LBphufu1n7gI5CHSLkLKwKBgBhAuM5u\nMSOGkSyhM4wOTP6huuUS6RxcsNoXhIGlZFwZmAahETMdL8BlqK0A87w+9gxFtyhS\noeMTVXY+pVhDNGBlo3f6atkdZS3vlL1K+gCD8tbTF4gulmZ503r6hKS4LJ8LvqWP\nEhjkwW6fYsbBpRcbCFg9SB6j2RbTQDLyT+sTAoGBAIBVkHORYcVJFyodR+p8D4dS\nYr4rphNzLcDbGzyFghj+wZKF+sj7yujo/+Y3T3gVL3wFzgQsi2fwzrvSXt0iitHg\nZ9T01jGQbu5/VRZ0Qv5j2Btoa+5G3R9u/4PS4Y6hyl47LiomiGkiAo8ZWFzIHx9V\n7txt3EQ2K3AkBfz+9x2H\n-----END PRIVATE KEY-----\n",
+  "client_email": "cloudvision@ocean-engineering.iam.gserviceaccount.com",
+  "client_id": "105282608534534848518",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/cloudvision%40ocean-engineering.iam.gserviceaccount.com"
+}
