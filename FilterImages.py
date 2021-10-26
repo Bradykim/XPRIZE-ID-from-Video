@@ -20,37 +20,37 @@ import pandas as pd
 def createCroppedImage(pillow_image, bounding, image_size, i,  caption='', confidence_score=0):
     global countImages
     width, height = image_size
+    if confidence_score >= 0.85:
+        print(width, height)
+        print('x0',bounding.normalized_vertices[0].x * width )
+        print('y0',bounding.normalized_vertices[0].y * height )
 
-    print(width, height)
-    print('x0',bounding.normalized_vertices[0].x * width )
-    print('y0',bounding.normalized_vertices[0].y * height )
+        print('x1',bounding.normalized_vertices[1].x * width )
+        print('y1',bounding.normalized_vertices[1].y * height )
 
-    print('x1',bounding.normalized_vertices[1].x * width )
-    print('y1',bounding.normalized_vertices[1].y * height )
+        print('x2',bounding.normalized_vertices[2].x * width )
+        print('y2',bounding.normalized_vertices[2].y * height )
 
-    print('x2',bounding.normalized_vertices[2].x * width )
-    print('y2',bounding.normalized_vertices[2].y * height )
+        print('x3',bounding.normalized_vertices[3].x * width )
+        print('y3',bounding.normalized_vertices[3].y * height )
 
-    print('x3',bounding.normalized_vertices[3].x * width )
-    print('y3',bounding.normalized_vertices[3].y * height )
-
-    area = (bounding.normalized_vertices[0].x * width, 
-              bounding.normalized_vertices[0].y * height,
-              bounding.normalized_vertices[2].x * width,
-              bounding.normalized_vertices[2].y * height)
-    cropped_img = pillow_image.crop(area)
-    pathCaption = 'Labeled Cropped Images/'+caption+'/'
+        area = (bounding.normalized_vertices[0].x * width, 
+                  bounding.normalized_vertices[0].y * height,
+                  bounding.normalized_vertices[2].x * width,
+                  bounding.normalized_vertices[2].y * height)
+        cropped_img = pillow_image.crop(area)
+        pathCaption = 'Labeled Cropped Images/'+caption+'/'
 
 
-    if not os.path.isdir(pathCaption):
-        os.mkdir(pathCaption)
-        countImages[caption] = 0
+        if not os.path.isdir(pathCaption):
+            os.mkdir(pathCaption)
+            countImages[caption] = 0
 
-    print(pathCaption+caption+'_'+str(countImages[caption])+'.png')
+        print(pathCaption+caption+'_'+str(countImages[caption])+'.png')
 
-    cropped_img.save(pathCaption+caption+'_'+str(countImages[caption])+'.png')
+        cropped_img.save(pathCaption+caption+'_'+str(countImages[caption])+'.png')
 
-    countImages[caption] += 1
+        countImages[caption] += 1
 
 def draw_borders(pillow_image, bounding, color, image_size, caption='', confidence_score=0):
 
