@@ -101,6 +101,7 @@ for frame in glob.glob(os.path.join(path2, '*.jpg')):
     max_label = ''
     for label in labels:
         score = label.score
+        #We do not need threshold1, can change to threshold2 (threshold1 is just for testing purposes)
         if score > threshold1:
             max_score = max(score,max_score)
             #Error is right here
