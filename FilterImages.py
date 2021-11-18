@@ -20,7 +20,7 @@ import pandas as pd
 def createCroppedImage(pillow_image, bounding, image_size, i,  caption='', confidence_score=0):
     global countImages
     width, height = image_size
-    if confidence_score >= 0.85:
+    if confidence_score >= 0.70:
         print(width, height)
         print('x0',bounding.normalized_vertices[0].x * width )
         print('y0',bounding.normalized_vertices[0].y * height )
